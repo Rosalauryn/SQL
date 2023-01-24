@@ -1,0 +1,22 @@
+CREATE TABLE paints(ID INTEGER PRIMARY KEY, MEDIUM TEXT, BRAND TEXT, AISLE INTEGER, PRICE INTEGER,COLOR TEXT);
+
+INSERT INTO paints VALUES (1,"Oil", "Winsor & Newton",3,13,"Blue");
+INSERT INTO paints VALUES (2,"Acrylic", "Winsor & Newton",3,13, "Green");
+INSERT INTO paints VALUES (3,"Watercolor", "Winsor & Newton",3,13,"Blue");
+INSERT INTO paints VALUES (4,"Gouche", "Winsor & Newton",3,13,"Blue");
+INSERT INTO paints VALUES (5,"Oil", "Winsor & Newton",3,13,"Green");
+INSERT INTO paints VALUES (6,"Acrylic", "Winsor & Newton",3,6,"Yellow");
+INSERT INTO paints VALUES (7,"Gouche", "Winsor & Newton",3,13,"Purple");
+INSERT INTO paints VALUES (8,"Gouche", "Winsor & Newton",3,13,"Blue");
+INSERT INTO paints VALUES (9,"Acrylic", "Winsor & Newton",3,13,"Yellow");
+INSERT INTO paints VALUES (10,"Gouche", "Winsor & Newton",3,5,"Purple");
+INSERT INTO paints VALUES (11,"Oil", "Winsor & Newton",3,13,"Red");
+INSERT INTO paints VALUES (12,"Acrylic", "Winsor & Newton",3,13,"White");
+INSERT INTO paints VALUES (13,"Oil", "Winsor & Newton",3,13,"Yellow");
+INSERT INTO paints VALUES (14,"Watercolor", "Winsor & Newton",3,13,"Purple");
+
+
+SELECT * FROM paints ORDER BY AISLE;
+SELECT SUM(PRICE) FROM paints;
+SELECT * FROM paints WHERE PRICE < 10 ORDER BY AISLE;
+SELECT SUM(PRICE) FROM paints;
